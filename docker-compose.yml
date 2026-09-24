@@ -1,0 +1,14 @@
+services:
+  auth-cli:
+    build: .
+    image: auth-cli:latest
+    container_name: auth-cli
+    stdin_open: true # interactive
+    tty: true        # interactive
+    volumes:
+      - auth_data:/data
+    env_file:
+      - .env
+
+volumes:
+  auth_data:
