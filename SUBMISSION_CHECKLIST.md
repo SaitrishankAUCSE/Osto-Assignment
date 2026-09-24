@@ -39,6 +39,6 @@
 - [x] README explains setup and commands
 - [x] migrations/schema included
 - [x] unit tests included
-- [ ] GitHub/GitLab repository pushed
-- [ ] repository visibility/access verified
+- [x] GitHub/GitLab repository pushed
+- [x] repository visibility/access verified
 - [ ] repository link emailed to the assignment contact
