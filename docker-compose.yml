@@ -8,7 +8,13 @@ services:
     volumes:
       - auth_data:/data
     env_file:
-      - .env
+      - path: .env
+        required: false
+    environment:
+      - DATABASE_URL=/data/auth.db
+      - MAX_LOGIN_ATTEMPTS=5
+      - LOCKOUT_DURATION_MINUTES=15
+      - SESSION_TIMEOUT_MINUTES=60
 
 volumes:
   auth_data:
