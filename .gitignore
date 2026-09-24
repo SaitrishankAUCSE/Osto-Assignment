@@ -1,0 +1,5 @@
+.env
+authcli
+*.exe
+*.db
+.authcli_history
